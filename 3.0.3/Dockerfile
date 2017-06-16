@@ -16,5 +16,5 @@ RUN rm sonar-scanner-cli-$VERSION.zip
 ENV SONAR_RUNNER_HOME=/root/sonar-scanner-$VERSION
 ENV PATH $PATH:/root/sonar-scanner-$VERSION/bin
 
-CMD sonar-scanner -Dsonar.projectBaseDir=./src
-
+#CMD sonar-scanner -Dsonar.projectBaseDir=./src
+CMD bash
